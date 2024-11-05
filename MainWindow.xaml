@@ -1,0 +1,126 @@
+﻿<Window x:Class="AudioToMicWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AudioToMicWPF"
+        mc:Ignorable="d"
+        Icon="Images\Wave.png"
+        Title="音频文件转QQ语音脚本" Height="809" Width="500">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="59*"/>
+            <ColumnDefinition Width="66*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="播放到QQ语音"
+        HorizontalAlignment="Left"
+        Height="66"
+        Margin="128,687,0,0"
+        VerticalAlignment="Top"
+        Width="217"
+        Click="OnPlayAudio"
+        Grid.ColumnSpan="2">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border BorderBrush="Black" BorderThickness="2" CornerRadius="5">
+                                    <Grid>
+                                        <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" RadiusX="5" RadiusY="5">
+                                            <Rectangle.LayoutTransform>
+                                                <RotateTransform Angle="0"/>
+                                            </Rectangle.LayoutTransform>
+                                        </Rectangle>
+                                        <TextBlock Text="播放到QQ语音" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
+                                    </Grid>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
+        </Button>
+
+        <TextBlock TextWrapping="Wrap" Margin="203,522,155,204" Text="当前聊天窗口：" FontFamily="Yu Gothic" FontSize="18" Grid.ColumnSpan="2"/>
+
+        <Button HorizontalAlignment="Left" Height="74" Width="137" Margin="30,425,0,0" VerticalAlignment="Top" Click="OnPickFile">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Border Background="Transparent" BorderBrush="#4d5952" BorderThickness="2" CornerRadius="2">
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                <Image Source="/Images/folder_icon.png" Width="24" Height="24" Margin="5" />
+                                <TextBlock Text="选取音频文件" VerticalAlignment="Center" Margin="5,0,0,0" FontSize="14" />
+                            </StackPanel>
+                        </Border>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+
+        <TextBlock x:Name="pathShower"
+           HorizontalAlignment="Left"
+           Height="72"
+           Margin="196,426,0,0"
+           TextWrapping="Wrap"
+           Text="音频路径..."
+           VerticalAlignment="Top"
+           Width="270"
+           FontFamily="Consolas" 
+           Foreground="LightGray" 
+           Background="DarkSlateGray" 
+           Padding="5" Grid.ColumnSpan="2" >
+        </TextBlock>
+
+        <ComboBox 
+            x:Name="devicesList"
+            HorizontalAlignment="Left"
+            Text="选择输出到的声卡..."
+            Height="25" Margin="198,627,0,0"
+            VerticalAlignment="Top"
+            Width="268"
+            SelectionChanged="devicesList_SelectionChanged"
+            DisplayMemberPath="DeviceName"
+            SelectedValuePath="DeviceID" Grid.ColumnSpan="2"
+            />
+        <TextBlock x:Name="currentDevice" HorizontalAlignment="Left" Height="22" Margin="30,630,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="137" FontFamily="Yu Gothic" FontWeight="Bold" FontSize="14"><Run Text="选择虚拟声卡输入"/><Run Language="zh-cn" Text="→"/></TextBlock>
+        <Button Content="选择QQ聊天窗口..." HorizontalAlignment="Left" Height="76" Margin="30,518,0,0" VerticalAlignment="Top" Width="137" Click="GetQQWindow"/>
+        <TextBlock x:Name="proccessName"
+           TextWrapping="Wrap"
+           Text="等待选择进程..."
+           VerticalAlignment="Top"
+           Margin="196,556,24,0"
+           Background="#FFF4F4F4"
+           Height="36"
+           Padding="5"
+           Grid.ColumnSpan="2"
+           FontSize="18"
+           FontWeight="Bold"
+           TextAlignment="Center"
+           FontFamily="Yu Gothic"
+           Opacity="0.99"
+           Foreground="Gray"
+           />
+
+
+        <Image HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="44" Source="/Images/QQ.png" Stretch="Fill" Margin="186,518,0,0" Grid.Column="1" RenderTransformOrigin="0.536,0.335"/>
+        <Label Content="音频文件&#x0a;转录为&#x0a;QQ语音&#x0a;"
+       Height="262"
+       Margin="21,135,0,0"
+       VerticalAlignment="Top"
+       Width="347" FontSize="72" Grid.ColumnSpan="2" HorizontalAlignment="Left" FontWeight="Bold" Opacity="0.375">
+            <Label.Foreground>
+                <SolidColorBrush Color="#4f4f4f" />
+            </Label.Foreground>
+            <Label.FontFamily>
+                Arial Black
+            </Label.FontFamily>
+        </Label>
+        <Image HorizontalAlignment="Left" Height="109" Margin="21,10,0,0" VerticalAlignment="Top" Width="107" Source="/Images/Wave.png" Opacity="0.5"/>
+       
+
+
+    </Grid>
+</Window>
