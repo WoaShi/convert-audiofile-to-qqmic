@@ -10,7 +10,7 @@
 
 ## 食用步骤
 1. 打开准备发送语音的聊天窗口，并打开语音输入界面，例如下图：
-   ![语音输入界面示例](![图片](https://github.com/user-attachments/assets/8eb3cce2-d07d-4066-b15e-4db51c31ce26))
+   ![图片](https://github.com/user-attachments/assets/8eb3cce2-d07d-4066-b15e-4db51c31ce26)
    记住窗口名称，例如图中“核实验场”。
 
 2. 打开软件本体。
