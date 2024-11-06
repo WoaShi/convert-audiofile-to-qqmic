@@ -1,7 +1,7 @@
 # 使用方法
 
 ## 重要说明
-**软件需求**：1.该软件依赖虚拟声卡（例如 `VoiceMeeter`）。
+**软件需求**：1.该软件依赖虚拟声卡（例如 `VoiceMeeter`）。  
               2.确保你的电脑装好了[.NET 8.0 运行时](https://dotnet.microsoft.com/en-us/download/dotnet)。  
               
 **兼容性**：该软件仅支持 QQNT 版本。
