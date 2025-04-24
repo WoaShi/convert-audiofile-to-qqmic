@@ -32,3 +32,16 @@
    - **注意**：请自行在Windows设置QQ输入麦克风为虚拟声卡的Output端。
 
 7. 若报错“图片错误！”，请自行将(![图片](https://github.com/user-attachments/assets/5636f2c0-bcb4-428c-b742-2f7db15a0e04)) 按钮截图保存到软件同目录的 `Images` 文件夹下，并重命名为 `MicButton.png`。
+
+
+
+## ETO
+
+**这里给一下我的配置**
+
+![03197ad03360bd3dcbf05508265b72dd](https://github.com/user-attachments/assets/c88f3f04-d879-4b7f-a483-7ff966088830)
+
+![e1f5971a85ff0b98849f742217f4bc20](https://github.com/user-attachments/assets/78a74711-f787-4bd9-bec9-3109fda449ff)
+
+![3b02d96d136511b8b370415491132d0d](https://github.com/user-attachments/assets/01ade962-a2d6-4406-adff-88e2fe27f48f)
+
