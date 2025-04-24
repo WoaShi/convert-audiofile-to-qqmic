@@ -37,11 +37,11 @@
 
 ## ETO
 
-**这里给一下我的配置**
+### **这里给一下我的配置**
 
 ![03197ad03360bd3dcbf05508265b72dd](https://github.com/user-attachments/assets/c88f3f04-d879-4b7f-a483-7ff966088830)
 
-![e1f5971a85ff0b98849f742217f4bc20](https://github.com/user-attachments/assets/78a74711-f787-4bd9-bec9-3109fda449ff)
+![5548c46245f6cbe263f0b21ce9661938](https://github.com/user-attachments/assets/61f9c925-22f2-4018-b800-208ffe3d22bc)
 
 ![3b02d96d136511b8b370415491132d0d](https://github.com/user-attachments/assets/01ade962-a2d6-4406-adff-88e2fe27f48f)
 
