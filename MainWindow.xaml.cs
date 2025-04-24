@@ -1,4 +1,6 @@
 ﻿using System.Diagnostics;
+using System.Drawing;
+using System.Drawing.Imaging;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -72,5 +74,32 @@ namespace AudioToMicWPF
             listAllWindows.ShowDialog();
         }
 
+        private void OnCaptureScreen(object sender, RoutedEventArgs e)
+        {
+            var captureWindow = new CaptureWindow();
+            captureWindow.ShowDialog();
+        
+            if (captureWindow.CapturedRect.HasValue)
+            {
+                System.Drawing.Rectangle rect = captureWindow.CapturedRect.Value;
+        
+                using (Bitmap screenShot = new Bitmap(rect.Width, rect.Height))
+                {
+                    using (Graphics g = Graphics.FromImage(screenShot))
+                    {
+                        g.CopyFromScreen(rect.Left, rect.Top, 0, 0, screenShot.Size);
+                    }
+        
+                    string savePath = @"Images\MicButton.png";
+                    screenShot.Save(savePath, System.Drawing.Imaging.ImageFormat.Png);
+        
+                    System.Windows.MessageBox.Show($"截图已保存到：{savePath}", "成功", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+            }
+            else
+            {
+                System.Windows.MessageBox.Show("未选择截图区域。", "提示", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+        }
     }
 }
