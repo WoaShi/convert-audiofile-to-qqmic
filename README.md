@@ -49,8 +49,8 @@
 FluentUI库：[GitHub - iNKORE-NET/UI.WPF.Modern: Modern (Fluent 2) styles and controls for your WPF applications](https://github.com/iNKORE-NET/UI.WPF.Modern)
 
 音频工具：[GitHub - naudio/NAudio: Audio and MIDI library for .NET](https://github.com/naudio/NAudio)
-
-                    [GitHub - BunLabs/NAudio.Flac: A FLAC library for NAudio ≥ 2.0](https://github.com/BunLabs/NAudio.Flac)
+         [GitHub - BunLabs/NAudio.Flac: A FLAC library for NAudio ≥ 2.0](https://github.com/BunLabs/NAudio.Flac)
+         [GitHub - NVorbis is a .Net library for decoding Xiph.org Vorbis files.](https://github.com/NVorbis/NVorbis)
 
 图像识别：OpenCvSharp
 
