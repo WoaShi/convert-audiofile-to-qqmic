@@ -20,9 +20,9 @@
   
 4. 点击 `选择音频文件` 按钮，在电脑中选择想要转录的音频。
   
-  ![说明](https://github.com/user-attachments/assets/d47ad4dd-f5f8-47b3-9804-c61e1ed40284)
+![a18c4333-3249-4e5d-97b1-f4e755e946ae](https://github.com/user-attachments/assets/7abb1533-430b-471a-99d1-c1778f589456)
 
-  * 图中 1、2 都能进行交互，选取成功后，右侧方框会显示音频路径。
+  * 图中顶上两个框可以进行交互，选取成功后，同色框中会显示对应路径。
 4. 点击 `选择聊天窗口` 按钮，打开选择QQ聊天窗口界面：
   
   * 选择与刚才聊天窗口名称相匹配的窗口（如图中的 “QQ”），点击确认。![bf7ff5ec-5659-495a-8572-04c2191f2ea9](https://github.com/user-attachments/assets/d0dc655d-e2bc-4635-9e82-8126c5164f7d)
