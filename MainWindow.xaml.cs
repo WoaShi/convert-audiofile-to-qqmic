@@ -1,10 +1,8 @@
-﻿using AudioToMicWPF.Services;
+using AudioToMicWPF.Services;
 using System.ComponentModel;
 using System.Drawing;
-using System.Globalization;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
 
 
 namespace AudioToMicWPF
