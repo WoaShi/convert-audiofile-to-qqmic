@@ -1,0 +1,46 @@
+<Window x:Class="AudioToMicWPF.CaptureWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Topmost="True"
+        ShowInTaskbar="False"
+        WindowState="Maximized">
+    <Canvas Name="CanvasRoot"
+            PreviewMouseDown="CanvasRoot_PreviewMouseDown"
+            PreviewMouseMove="CanvasRoot_PreviewMouseMove"
+            PreviewMouseUp="CanvasRoot_PreviewMouseUp">
+        
+        <!-- 半透明蒙版 -->
+        <Rectangle Fill="#60000000"
+                   Width="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=Canvas}}"
+                   Height="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Canvas}}"/>
+        
+        <!-- 动态选择框 -->
+        <Rectangle Name="SelectionRect"
+                   Stroke="DodgerBlue"
+                   StrokeThickness="2"
+                   StrokeDashArray="4 2"
+                   Visibility="Collapsed"
+                   Fill="#20ADD8E6"/>
+        
+        <!-- 操作按钮（使用Border包裹实现圆角） -->
+        <Border Name="ButtonPanel"
+                Visibility="Collapsed"
+                Background="#CCFFFFFF"
+                CornerRadius="4"
+                Padding="8">
+            <StackPanel Orientation="Horizontal">
+                <Button Content="✅ 保存"
+                        Click="SaveButton_Click"
+                        Style="{StaticResource FlatButtonStyle}"
+                        Margin="0,0,8,0"/>
+                <Button Content="❌ 取消"
+                        Click="CancelButton_Click"
+                        Style="{StaticResource FlatButtonStyle}"/>
+            </StackPanel>
+        </Border>
+    </Canvas>
+</Window>
