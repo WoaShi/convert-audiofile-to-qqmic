@@ -1,4 +1,4 @@
-# 使用方法
+# 使用方法
 
 ## 重要说明
 
@@ -6,17 +6,13 @@
 
     该软件赖虚拟声卡（例如 `VoiceMeeter`）。
 
-**兼容性**：该软件仅支持 QQNT 版本。
-
-## 软件主体
-
-软件主体为 `AudioToMicWPF.exe`。
+**兼容性**：该软件支持如 QQNT 等通过按下语音按钮发送语音的软件。
 
 ## 食用步骤
 
-   0.有关虚拟声卡，以VoiceMeeter举例，在VoiceMeeter初始化完成后，不需要在使用本软件的同时运行VoiceMeeter。
+   0. 有关虚拟声卡，以VoiceMeeter举例，在VoiceMeeter初始化完成后，不需要在使用本软件的同时运行VoiceMeeter。
 
-1. 打开准备发送语音的聊天窗口，并打开语音输入界面，例如下图：关于窗口名称，举例：QQ的群聊窗口会在软件中显示为“QQ”。
+1. 打开准备发送语音的聊天窗口，并打开语音输入界面，例如下图：关于窗口名称，举例：QQ的群聊窗口会在软件中显示为“QQ”。
   
 2. 打开软件本体。
   
@@ -49,5 +45,7 @@ FluentUI库：[GitHub - iNKORE-NET/UI.WPF.Modern: Modern (Fluent 2) styles and c
 音频工具：[GitHub - naudio/NAudio: Audio and MIDI library for .NET](https://github.com/naudio/NAudio)
 
                     [GitHub - BunLabs/NAudio.Flac: A FLAC library for NAudio ≥ 2.0](https://github.com/BunLabs/NAudio.Flac)
+
+图像识别：OpenCvSharp
 
 十分感谢 ETO-QSH 对该软件的建议与修正。
