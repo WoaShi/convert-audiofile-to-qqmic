@@ -33,6 +33,9 @@
 5. 若选择成功，右侧方框将显示窗口名称。
   
 6. 点击 `选择虚拟声卡` 栏目选取你的虚拟声卡输入，确保其与虚拟声卡输出相匹配，例如 VoiceMeeter VAIO3 Input 对应的麦克风输入应设置为 VoiceMeeter VAIO3 Output。
+
+![image](https://github.com/user-attachments/assets/42b5dd0d-01ec-4bc1-8958-b882436a2692)
+![image](https://github.com/user-attachments/assets/ebf39021-4ef6-4a1d-af85-3afc25f9f121)
   
 7. 点击 `截图语音按钮`，对语音按钮进行裁截，如图。
   
