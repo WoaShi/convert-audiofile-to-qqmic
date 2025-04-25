@@ -1,14 +1,14 @@
 ﻿using AudioToMicWPF.Services;
 using System.ComponentModel;
 using System.Drawing;
+using System.Globalization;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Data;
 
 
 namespace AudioToMicWPF
 {
-
-
     public class MainViewModel : INotifyPropertyChanged//用于刷新该窗口的数据
     {
         private string? _selectedFilePath;
